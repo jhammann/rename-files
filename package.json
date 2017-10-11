@@ -1,0 +1,15 @@
+{
+  "name": "file-rename",
+  "version": "",
+  "repository": {
+    "type": "git",
+    "url": "file-rename"
+  },
+  "author": "",
+  "devDependencies": {},
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-load-plugins": "^1.5.0",
+    "gulp-rename": "^1.2.2"
+  }
+}
