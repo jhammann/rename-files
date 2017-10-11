@@ -8,7 +8,8 @@ const $ = gulpLoadPlugins();
 gulp.task('default', () => {
   files.forEach((file, index) => {
     const newName = index + 1;
-    const extension = file.split('.').pop();
+    const extension = file.split('.').pop(); // Extract the extension from the file.
+    // Check the files directory for the original files.
     gulp.src(`./files/${file}`)
       .pipe($.rename(`${newName}.${extension}`))
       .pipe(gulp.dest('./new/'));

@@ -5,7 +5,7 @@
     "type": "git",
     "url": "file-rename"
   },
-  "author": "",
+  "author": "Jeroen Hammann",
   "devDependencies": {},
   "dependencies": {
     "gulp": "^3.9.1",
