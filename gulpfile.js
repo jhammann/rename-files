@@ -2,11 +2,15 @@
 const gulp = require('gulp');
 const gulpLoadPlugins = require('gulp-load-plugins');
 const files = require('./input');
+const _ = require('lodash');
 
 const $ = gulpLoadPlugins();
 
 gulp.task('default', () => {
-  files.forEach((file, index) => {
+  // Remove duplicate filenames.
+  const uniqueFiles = _.uniq(files);
+
+  uniqueFiles.forEach((file, index) => {
     const newName = index + 1;
     const extension = file.split('.').pop(); // Extract the extension from the file.
     // Check the files directory for the original files.
